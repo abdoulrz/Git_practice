@@ -1,0 +1,122 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f7f7f7;
+}
+
+header {
+	text-align: center;
+	padding: 1rem;
+	background-color: #fff;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+main {
+	max-width: 600px;
+	margin: 2rem auto;
+	background-color: #fff;
+	padding: 2rem;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.timer-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.timer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 6rem;
+	margin-bottom: 2rem;
+}
+
+.timer span {
+	padding: 0.5rem;
+}
+
+.timer-controls {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 2rem;
+}
+
+.timer-controls button {
+	margin: 0.5rem;
+	padding: 0.5rem 1rem;
+	border: none;
+	background-color: #4CAF50;
+	color: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.timer-controls button:hover {
+	background-color: #3e8e41;
+}
+
+.settings {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 2rem;
+}
+
+.settings div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0.5rem;
+}
+
+.settings label {
+	margin-bottom: 0.5rem;
+}
+
+.settings input {
+	padding: 0.5rem;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+
+.analytics {
+	text-align: center;
+}
+
+.analytics h2 {
+	margin-bottom: 0.5rem;
+}
+
+.analytics p {
+	margin-bottom: 0.5rem;
+}
+
+.distraction-free {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 2rem;
+}
+
+.distraction-free label {
+	margin-right: 0.5rem;
+}
+
+.distraction-free input[type="checkbox"] {
+	transform: scale(1.5);
+}
+
+@media screen and (max-width: 480px) {
+	.timer {
+		font-size: 4rem;
+	}
+}
